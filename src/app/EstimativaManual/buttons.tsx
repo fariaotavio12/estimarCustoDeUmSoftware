@@ -1,11 +1,7 @@
 import Button from "@/components/elements/button/button";
 import styles from "./buttons.module.css";
-import LinkButton from "@/components/elements/linkButton/link";
 
-interface IButtonChamadosProps {
-  pageCurrent: number;
-  updatePage: (e: number) => void;
-}
+
 const ButtonChamados = ({
   page,
   setPage,

@@ -48,9 +48,6 @@ const LinkButton: React.FC<IButton> = ({
   iconLeft,
   iconRight,
   children,
-  onClick,
-  className = "",
-  style,
   href,
   ...props
 }) => {
@@ -65,7 +62,6 @@ const LinkButton: React.FC<IButton> = ({
        ${styles[estilo]} ${styles[modelo]} ${styles[size]}`}
       {...props}
       href={href ?? "/"}
-      style={style}
       onClick={handlePress}
     >
       {iconLeft && iconLeft}
