@@ -5,7 +5,7 @@ import iconeRaio from "@/assets/icons/raio.svg";
 import LinkButton from "@/components/elements/linkButton/button";
 import imagemUndraw from "@/assets/images/undraw-books-re-8-gea-1.png";
 import iconeBag from "@/assets/icons/bag.svg";
-import iconeGlobe from "@/assets/icons/globe.svg";
+import iconeGlobe from "@/assets/icons/globle.svg";
 import iconeSend from "@/assets/icons/send.svg";
 export default function Home() {
   return (

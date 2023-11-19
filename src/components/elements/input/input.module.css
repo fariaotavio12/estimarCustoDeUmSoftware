@@ -1,0 +1,93 @@
+.container {
+    width: auto;
+    height: auto;
+    gap: 8px;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inline {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .inputWrapper {
+    width: 100%;
+    height: 40px;
+    border: solid 1px var(--gray300);
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .iconLeft {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+  }
+  
+  .iconRight {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+  }
+  
+  .input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 12px;
+    font-size: 14px;
+    color: var(--gray600);
+    display: flex;
+    align-items: center;
+  }
+  
+  .input:disabled {
+    background-color: var(--gray200);
+  }
+
+  .input::placeholder{
+    font-size: 12px;
+  }
+  
+  .label {
+    width: auto;
+    color: var(--gray700);
+    font-size: 12px;
+    line-height: 20px;
+    text-wrap: nowrap;
+    font-weight: 500;
+  }
+  
+  .inputicon:focus-within {
+    border: solid 1px var(--gray300);
+  }
+  
+  .input:disabled ~ .inputicon {
+    background-color: var(--gray100);
+  }
+  
+  .notification {
+    font-size: 12px;
+    color: var(--erro500);
+    height: 12px;
+  }
+  
+  .error {
+    border: solid 1px var(--erro500);
+  }

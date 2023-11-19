@@ -12,6 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className={Style.navbar}>
+    
       <div className={Style.logo_ul}>
         <Link href={"https://iftm.edu.br/ituiutaba/"} target="_blank">
           <Image src={imagemIftm} sizes="auto" alt="icone Linkedin" />
@@ -50,6 +51,7 @@ const Navbar = () => {
       >
         <Image src={iconeLinkedin} sizes="auto" alt="icone Linkedin" />
       </Link>
+      
     </nav>
   );
 };

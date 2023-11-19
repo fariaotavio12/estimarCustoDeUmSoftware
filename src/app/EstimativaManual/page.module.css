@@ -1,0 +1,60 @@
+.main{
+  background-color: var(--gray50);
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 64px 0;
+  gap: 64px;
+  max-width: 1440px;
+}
+
+.titulo_Subtitulo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.titulo_Subtitulo h1 {
+  color: var(--gray900, #101828);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+}
+
+.titulo_Subtitulo h5 {
+  color: var(--gray-500, #667085);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.containerObjeto{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.containerForm{
+  width: 100%;
+  height: auto;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px -1px rgba(16, 24, 40, 0.10), 0px 1px 3px 0px rgba(16, 24, 40, 0.10);
+  border: solid 1px var(--gray300);
+  overflow: hidden;
+}
+

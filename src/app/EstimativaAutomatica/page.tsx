@@ -2,7 +2,7 @@ import Style from "./page.module.css"
 
 const Page = () => {
     return (
-        <div>Estimativa Automatica</div>
+        <div className={Style.container}>Estimativa Automatica</div>
     )
 }
 

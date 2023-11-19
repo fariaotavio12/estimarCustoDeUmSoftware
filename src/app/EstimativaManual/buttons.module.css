@@ -1,0 +1,11 @@
+.buttons {
+    width: 100%;
+    height:auto;
+    margin-top: auto;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    gap: 24px;
+    padding: 0 24px 24px 0;
+  }
+
