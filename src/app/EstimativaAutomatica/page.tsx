@@ -1,9 +1,11 @@
-import Style from "./page.module.css"
+import Style from "./page.module.css";
 
 const Page = () => {
-    return (
-        <div className={Style.container}>Estimativa Automatica</div>
-    )
-}
+  return (
+    <main className={Style.main}>
+      <div className={Style.container}>Construção</div>
+    </main>
+  );
+};
 
-export default Page
+export default Page;
