@@ -1,0 +1,50 @@
+.containerNuvem {
+    position: fixed;
+    width: auto;
+    max-width: 90%;
+    height: auto;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    background: rgb(255, 255, 255);
+    border: 1px solid var(--gray300, #d0d5dd);
+    padding: 24px;
+    border-radius: 10px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .iconeFechar {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 9;
+    top: 0;
+    left: 0;
+  }
+  
+  @media (max-width: 420px) {
+    .containerNuvem {
+      max-width: 95%;
+    }
+  }
+  
+  .rightToLeft{
+    position: fixed;
+    top: 40px;
+    right: 0;
+  }

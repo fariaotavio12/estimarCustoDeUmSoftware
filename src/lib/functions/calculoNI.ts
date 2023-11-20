@@ -14,7 +14,7 @@ const calculaNI = (valor: NIContagem) : number => {
   
   
 
-  return (total * 0.01) + 0.65;
+  return total;
 };
 
 export default calculaNI;

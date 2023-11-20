@@ -1,18 +1,23 @@
-interface EstimativaCustoResultado {
-  pfa: number;
-  tamanho_kloc: number;
-  produtividade: number;
-  esforco: number;
-  tempo: number;
-  custo_total: number;
+export interface EstimativaCustoResultado {
+  fa?:number;
+  pfb? : number;
+  pfa?: number;
+  ni ?: number;
+  tamanho_kloc?: number;
+  tamanhoPFA ?: number;
+  produtividade?: number;
+  esforco?: number;
+  tempo?: number;
+  custo_total?: number;
 }
 
 function estimativaCustoSoftware(
-  pfb: number,
-  ni: number,
+  pfb: number = 0,
+  ni: number = 0,
   ted: number = 1,
-  pessoasPorMes: number = 6,
-  custoPorPessoaMes: number = 5000
+  pessoasPorMes: number = 0,
+  custoPorPessoaMes: number = 0,
+  linhasDeCodigo : number = 0
 ): EstimativaCustoResultado {
   // Calculando o Fator de Ajuste (FA)
   const fa: number = ni * 0.01 + 0.65;
@@ -23,8 +28,10 @@ function estimativaCustoSoftware(
   // Estimativa do Tamanho em KLOC
   const tamanhoKloc: number = pfa * 18;
 
+  const tamanhoPFA : number = linhasDeCodigo / 18;
+
   // Estimativa de Produtividade
-  const produtividade: number = pfa / pessoasPorMes;
+  const produtividade: number = tamanhoPFA / pessoasPorMes;
 
   // Estimativa do Esforço
   const esforco: number = pfa / produtividade;
@@ -37,8 +44,12 @@ function estimativaCustoSoftware(
 
   // Retornando os resultados
   return {
+    fa,
+    pfb , 
     pfa,
+    ni ,
     tamanho_kloc: tamanhoKloc,
+    tamanhoPFA : tamanhoPFA,
     produtividade,
     esforco,
     tempo,
@@ -47,4 +58,4 @@ function estimativaCustoSoftware(
 }
 
 
-export default {estimativaCustoSoftware}
+export default estimativaCustoSoftware

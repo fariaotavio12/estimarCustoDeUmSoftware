@@ -1,0 +1,8 @@
+.close{
+    cursor: pointer;
+    color: var(--gray700);
+}
+
+.close:hover{
+    color: var(--erro500);
+}

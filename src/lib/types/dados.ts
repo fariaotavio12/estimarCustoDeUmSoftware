@@ -30,6 +30,11 @@ export interface NIContagem {
 }
 
 export interface IDadosProjeto {
+  nome? : string,
+  numeroPessoas? : number,
+  custoPessoas? : number,
+  ted? : number,
+  linhasDeCodigo? :number,
   pfb: PFBContagem;
   ni: NIContagem;
 }

@@ -58,3 +58,25 @@
   overflow: hidden;
 }
 
+.container_input_header{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.containerResultado{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 12px;
+}
+
+.containerResultado h5{
+  font-weight: 400;
+}
+
