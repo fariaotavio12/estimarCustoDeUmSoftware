@@ -55,7 +55,7 @@ export default function Home() {
             </div>
           </div>
           <div className={Style.item}>
-            <Image src={iconeGlobe} alt="icone caixa" />
+            <Image src={iconeGlobe} alt="icone caixa"  width={48}/>
             <div className={Style.titulo_subtilo_item}>
               <h1>Online e gratuito </h1>
               <h5>
