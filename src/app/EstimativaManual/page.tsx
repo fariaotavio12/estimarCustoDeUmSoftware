@@ -195,6 +195,7 @@ const Page = () => {
           overlay
         >
           <div className={Style.containerResultado}>
+            <h4>{dadosProjeto.nome || "Nome não informado"}</h4>
             <h5>
               Estimativa FA:{" "}
               <strong>{dadosRetorno.fa || "Não foi possivel calcular"}</strong>

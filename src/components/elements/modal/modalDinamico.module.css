@@ -1,7 +1,7 @@
 .containerNuvem {
     position: fixed;
     width: auto;
-    max-width: 90%;
+    /* max-width: 90%; */
     height: auto;
     right: 50%;
     top: 50%;
@@ -39,7 +39,8 @@
   
   @media (max-width: 420px) {
     .containerNuvem {
-      max-width: 95%;
+      width: 95%;
+      /* padding: 0; */
     }
   }
   

@@ -68,7 +68,8 @@
 }
 
 .containerResultado{
-  width: 100%;
+  width: auto;
+  min-width: 280px;
   height: auto;
   display: flex;
   flex-direction: column;
